@@ -28,6 +28,11 @@ public class Main {
                     System.out.println("Resultado ejercicio 2: " + e.declararDecimal());
                     break;
 
+                case 3:
+                    System.out.println("Ejercicio 3: " + e.declararTexto());
+                    break;
+
+
                 default:
                     System.out.println("  ");
             }

@@ -27,9 +27,10 @@ public class Ejercicios {
      * Ejemplo: Si ejecutas la función, debe retornar "Hola Mundo"
      */
     public String declararTexto() {
-        // TODO: Implementar
-        return "";
+        String texto = "Hola Mundo";
+        return texto;
     }
+
 
     /**
      * Crea una variable boolean, asígnale true y retórnala.

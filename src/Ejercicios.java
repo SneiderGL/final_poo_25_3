@@ -87,38 +87,47 @@ public class Ejercicios {
     /**
      * Recibe una edad, guárdala en una variable local y retórnala.
      * Ejemplo: Si pasas 25, debe retornar 25
+     * ejercicio 9
      */
     public int asignarEdad(int edad) {
-        // TODO: Implementar
-        return 0;
+        int edadLocal = edad;
+        return edadLocal;
     }
+
 
     /**
      * Recibe un nombre, guárdalo en una variable local y retórnalo.
      * Ejemplo: Si pasas "Juan", debe retornar "Juan"
+     * ejercicio 10
      */
     public String asignarNombre(String nombre) {
-        // TODO: Implementar
-        return "";
+        String nombreLocal = nombre;
+        return nombreLocal;
     }
+
 
     /**
      * Intercambia dos valores y retorna un array con los valores intercambiados.
      * Ejemplo: Si pasas (5, 10), debe retornar [10, 5]
+     * ejercicio 11
      */
     public int[] intercambiarValores(int a, int b) {
-        // TODO: Implementar
-        return new int[]{0, 0};
+        int temp = a;
+        a = b;
+        b = temp;
+        return new int[]{a, b};
     }
+
 
     /**
      * Combina el nombre y la edad en un texto descriptivo.
      * Ejemplo: Si pasas ("Ana", 22), debe retornar "Ana tiene 22 años"
+     * ejercicio 12
      */
     public String concatenarDatos(String nombre, int edad) {
-        // TODO: Implementar
-        return "";
+        return nombre + " tiene " + edad + " años";
     }
+
 
     /**
      * Suma el salario base más los bonos para obtener el salario total.

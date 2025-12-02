@@ -60,6 +60,36 @@ public class Main {
                     System.out.println("Ejercicio 8: " + e.convertirEnteroADecimal(valor8));
                     break;
 
+                case 9:
+                    System.out.print("Ingrese una edad: ");
+                    int edad9 = sc.nextInt();
+                    System.out.println("Ejercicio 9: " + e.asignarEdad(edad9));
+                    break;
+
+                case 10:
+                    System.out.print("Ingrese un nombre: ");
+                    String nombre10 = sc.next();
+                    System.out.println("Ejercicio 10: " + e.asignarNombre(nombre10));
+                    break;
+
+                case 11:
+                    System.out.print("Ingrese el primer valor: ");
+                    int a11 = sc.nextInt();
+                    System.out.print("Ingrese el segundo valor: ");
+                    int b11 = sc.nextInt();
+
+                    int[] resultado11 = e.intercambiarValores(a11, b11);
+                    System.out.println("Ejercicio 11: [" + resultado11[0] + ", " + resultado11[1] + "]");
+                    break;
+
+                case 12:
+                    System.out.print("Ingrese un nombre: ");
+                    String nombre12 = sc.next();
+                    System.out.print("Ingrese una edad: ");
+                    int edad12 = sc.nextInt();
+
+                    System.out.println("Ejercicio 12: " + e.concatenarDatos(nombre12, edad12));
+                    break;
 
 
                 default:

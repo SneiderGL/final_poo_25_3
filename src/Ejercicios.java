@@ -131,21 +131,23 @@ public class Ejercicios {
 
     /**
      * Suma el salario base más los bonos para obtener el salario total.
-     * Ejemplo: Si pasas (1000.0, 200.0), debe retornar 1200.0
+     * Ejemplo: Si pasas (+1000.0, 200.0), debe retornar 1200.0
+     * ejercicio 13
      */
     public double calcularSalarioTotal(double salarioBase, double bonos) {
-        // TODO: Implementar
-        return 0.0;
+        return salarioBase + bonos;
     }
+
 
     /**
      * Incrementa un contador con el valor especificado.
      * Ejemplo: Si pasas (10, 5), debe retornar 15
+     * ejercicio 14
      */
     public int actualizarContador(int contadorActual, int incremento) {
-        // TODO: Implementar
-        return 0;
+        return contadorActual + incremento;
     }
+
 
     // =================================================================
     // 3. OPERADORES
@@ -154,42 +156,47 @@ public class Ejercicios {
     /**
      * Suma dos números enteros.
      * Ejemplo: Si pasas (7, 3), debe retornar 10
+     * ejercicio 15
      */
     public int sumarDosNumeros(int a, int b) {
-        // TODO: Implementar
-        return 0;
+        return a + b;
     }
+
 
     /**
      * Calcula el residuo de una división usando el operador módulo (%).
      * Ejemplo: Si pasas (17, 5), debe retornar 2
+     * ejercicio 16
      */
     public int calcularResto(int dividendo, int divisor) {
-        // TODO: Implementar
-        return 0;
+        return dividendo % divisor;
     }
+
 
     /**
      * Compara si el primer número es mayor que el segundo.
      * Ejemplo: Si pasas (8, 5), debe retornar true
+     * 17
      */
     public boolean esMayorQue(int a, int b) {
-        // TODO: Implementar
-        return false;
+        return a > b;
     }
+
 
     /**
      * Verifica si un número es par Y positivo usando operadores lógicos.
      * Ejemplo: Si pasas 6, debe retornar true. Si pasas -4, debe retornar false
+     * 18
      */
     public boolean esParYPositivo(int num) {
-        // TODO: Implementar
-        return false;
+        return num % 2 == 0 && num > 0;
     }
+
 
     /**
      * Verifica si un número es múltiplo de 3 usando el operador módulo.
      * Ejemplo: Si pasas 9, debe retornar true. Si pasas 7, debe retornar false
+     * 19
      */
     public boolean esMultiploDeTres(int num) {
         // TODO: Implementar
@@ -201,9 +208,9 @@ public class Ejercicios {
      * Ejemplo: Si pasas (20, 4), debe retornar true
      */
     public boolean esMultiploDeN(int num, int n) {
-        // TODO: Implementar
-        return false;
+        return num % n == 0;
     }
+
 
     /**
      * Incrementa un número en 1 usando operadores de asignación.

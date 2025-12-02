@@ -91,6 +91,81 @@ public class Main {
                     System.out.println("Ejercicio 12: " + e.concatenarDatos(nombre12, edad12));
                     break;
 
+                case 13:
+                    System.out.print("Ingrese el salario base: ");
+                    double base13 = sc.nextDouble();
+
+                    System.out.print("Ingrese los bonos: ");
+                    double bonos13 = sc.nextDouble();
+
+                    System.out.println("Ejercicio 13: " + e.calcularSalarioTotal(base13, bonos13));
+                    break;
+
+                case 14:
+                    System.out.print("Ingrese el contador actual: ");
+                    int cont14 = sc.nextInt();
+
+                    System.out.print("Ingrese el incremento: ");
+                    int inc14 = sc.nextInt();
+
+                    System.out.println("Ejercicio 14: " + e.actualizarContador(cont14, inc14));
+                    break;
+
+                case 15:
+                    System.out.print("Ingrese el primer numero: ");
+                    int n15a = sc.nextInt();
+
+                    System.out.print("Ingrese el segundo numero: ");
+                    int n15b = sc.nextInt();
+
+                    System.out.println("Ejercicio 15: " + e.sumarDosNumeros(n15a, n15b));
+                    break;
+
+                case 16:
+                    System.out.print("Ingrese el dividendo: ");
+                    int d16 = sc.nextInt();
+
+                    System.out.print("Ingrese el divisor: ");
+                    int v16 = sc.nextInt();
+
+                    System.out.println("Ejercicio 16: " + e.calcularResto(d16, v16));
+                    break;
+
+                case 17:
+                    System.out.print("Ingrese el primer numero: ");
+                    int n17a = sc.nextInt();
+
+                    System.out.print("Ingrese el segundo numero: ");
+                    int n17b = sc.nextInt();
+
+                    System.out.println("Ejercicio 17: " + e.esMayorQue(n17a, n17b));
+                    break;
+
+                case 18:
+                    System.out.print("Ingrese un numero: ");
+                    int n18 = sc.nextInt();
+
+                    System.out.println("Ejercicio 18: " + e.esParYPositivo(n18));
+                    break;
+
+                case 19:
+                    System.out.print("Ingrese un numero: ");
+                    int n19 = sc.nextInt();
+
+                    System.out.println("Ejercicio 19: " + e.esMultiploDeTres(n19));
+                    break;
+
+
+                case 20:
+                    System.out.print("Ingrese el numero: ");
+                    int num20 = sc.nextInt();
+
+                    System.out.print("Ingrese N: ");
+                    int n20 = sc.nextInt();
+
+                    System.out.println("Ejercicio 20: " + e.esMultiploDeN(num20, n20));
+                    break;
+
 
                 default:
                     System.out.println("  ");

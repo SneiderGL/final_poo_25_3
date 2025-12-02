@@ -37,9 +37,10 @@ public class Ejercicios {
      * Ejemplo: Si ejecutas la función, debe retornar true
      */
     public boolean declararBooleano() {
-        // TODO: Implementar
-        return false;
+        boolean valor = true;
+        return valor;
     }
+
 
     /**
      * Convierte un número entero a texto usando String.valueOf().
@@ -56,27 +57,28 @@ public class Ejercicios {
      * Ejemplo: Si pasas "456", debe retornar 456
      */
     public int convertirTextoAEntero(String texto) {
-        // TODO: Implementar
-        return 0;
+        return Integer.parseInt(texto);
     }
+
 
     /**
      * Convierte un número decimal a entero (truncando los decimales).
      * Ejemplo: Si pasas 9.87, debe retornar 9
      */
     public int convertirDecimalAEntero(double decimal) {
-        // TODO: Implementar
-        return 0;
+        return (int) decimal;
     }
+
 
     /**
      * Convierte un número entero a decimal.
      * Ejemplo: Si pasas 5, debe retornar 5.0
+     *  ejercicio 8
      */
     public double convertirEnteroADecimal(int entero) {
-        // TODO: Implementar
-        return 0.0;
+        return (double) entero;
     }
+
 
     // =================================================================
     // 2. ASIGNACIÓN E INTERACCIÓN DE VARIABLES

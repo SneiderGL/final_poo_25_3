@@ -360,36 +360,55 @@ public class Ejercicios {
     /**
      * Determina si un año es bisiesto (divisible por 4, excepto centenarios no divisibles por 400).
      * Ejemplo: Si pasas 2024, debe retornar true
+     * ejercicio 33
      */
     public boolean esBisiesto(int año) {
-        // TODO: Implementar
-        return false;
+        return (año % 4 == 0 && año % 100 != 0) || (año % 400 == 0);
     }
 
     /**
      * Verifica si la suma de los dígitos de un número es múltiplo de 7.
      * Ejemplo: Si pasas 25, debe retornar true (2+5=7, que es múltiplo de 7)
+     * ejercicio 34
      */
     public boolean numeroMagico(int num) {
-        // TODO: Implementar
-        return false;
+        int suma = 0;
+        int n = Math.abs(num);
+        while (n > 0) {
+            suma += n % 10;
+            n /= 10;
+        }
+        return suma % 7 == 0;
     }
 
     /**
      * Cuenta cuántos dígitos tiene un número.
      * Ejemplo: Si pasas 1234, debe retornar 4
+     * ejercicio 35
      */
     public int contarDigitos(int num) {
-        // TODO: Implementar
-        return 0;
+        int n = Math.abs(num);
+        if (n == 0) return 1;
+        int count = 0;
+        while (n > 0) {
+            count++;
+            n /= 10;
+        }
+        return count;
     }
 
     /**
      * Genera la tabla de multiplicar del 1 al 10 para el número dado, retorna como String.
      * Ejemplo: Si pasas 3, debe retornar "3x1=3\n3x2=6\n3x3=9\n...3x10=30"
+     * ejercicio 36
      */
     public String tablaMultiplicar(int num) {
-        // TODO: Implementar
-        return "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i <= 10; i++) {
+            sb.append(num).append("x").append(i).append("=").append(num * i);
+            if (i != 10) sb.append("\n");
+        }
+        return sb.toString();
     }
+
 }

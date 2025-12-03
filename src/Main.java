@@ -248,9 +248,33 @@ public class Main {
                     System.out.println("Ejercicio 32: " + e.esNumeroPerfecto(num32));
                     break;
 
+                case 33:
+                    System.out.print("Ingrese un año: ");
+                    int año33 = sc.nextInt();
+                    System.out.println("Ejercicio 33: " + e.esBisiesto(año33));
+                    break;
+
+                case 34:
+                    System.out.print("Ingrese un número: ");
+                    int num34 = sc.nextInt();
+                    System.out.println("Ejercicio 34: " + e.numeroMagico(num34));
+                    break;
+
+                case 35:
+                    System.out.print("Ingrese un número: ");
+                    int num35 = sc.nextInt();
+                    System.out.println("Ejercicio 35: " + e.contarDigitos(num35));
+                    break;
+
+                case 36:
+                    System.out.print("Ingrese un número: ");
+                    int num36 = sc.nextInt();
+                    System.out.println("Ejercicio 36:\n" + e.tablaMultiplicar(num36));
+                    break;
+
 
                 default:
-                    System.out.println("  ");
+                    System.out.println("seleccionaste una opcion incorrecta  ");
             }
 
         }

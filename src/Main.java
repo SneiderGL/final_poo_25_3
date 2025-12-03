@@ -198,6 +198,55 @@ public class Main {
                     System.out.println("Ejercicio 25: " + e.evaluarPrueba(nota25));
                     break;
 
+                case 26:
+                    System.out.print("Ingrese la nota: ");
+                    double nota26 = sc.nextDouble();
+                    System.out.print("Ingrese la edad: ");
+                    int edad26 = sc.nextInt();
+                    System.out.print("Tiene experiencia (true/false): ");
+                    boolean exp26 = sc.nextBoolean();
+                    System.out.println("Ejercicio 26: " + e.evaluarAptitud(nota26, edad26, exp26));
+                    break;
+
+                case 27:
+                    System.out.print("Ingrese el precio: ");
+                    double precio27 = sc.nextDouble();
+                    System.out.print("Ingrese la edad: ");
+                    int edad27 = sc.nextInt();
+                    System.out.print("Es estudiante (true/false): ");
+                    boolean esEstudiante27 = sc.nextBoolean();
+                    System.out.println("Ejercicio 27: " + e.calcularDescuentoEstudiante(precio27, edad27, esEstudiante27));
+                    break;
+
+                case 28:
+                    System.out.print("Ingrese la edad: ");
+                    int edad28 = sc.nextInt();
+                    System.out.println("Ejercicio 28: " + e.determinarCategoria(edad28));
+                    break;
+
+                case 29:
+                    System.out.print("Ingrese n: ");
+                    int n29 = sc.nextInt();
+                    System.out.println("Ejercicio 29: " + e.sumarHastaN(n29));
+                    break;
+
+                case 30:
+                    System.out.print("Ingrese n: ");
+                    int n30 = sc.nextInt();
+                    System.out.println("Ejercicio 30: " + e.factorial(n30));
+                    break;
+
+                case 31:
+                    System.out.print("Ingrese n: ");
+                    int n31 = sc.nextInt();
+                    System.out.println("Ejercicio 31: " + e.fibonacci(n31));
+                    break;
+
+                case 32:
+                    System.out.print("Ingrese un numero: ");
+                    int num32 = sc.nextInt();
+                    System.out.println("Ejercicio 32: " + e.esNumeroPerfecto(num32));
+                    break;
 
 
                 default:

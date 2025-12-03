@@ -268,68 +268,93 @@ public class Ejercicios {
     /**
      * Evalúa aptitud considerando: nota >= 3.0, edad >= 18 y experiencia.
      * Ejemplo: Si pasas (4.0, 22, true), debe retornar "apto"
+     * ejercicio 26
      */
     public String evaluarAptitud(double nota, int edad, boolean tieneExperiencia) {
-        // TODO: Implementar
-        return "";
+        if (nota >= 3.0 && edad >= 18 && tieneExperiencia) return "apto";
+        else return "no apto";
     }
 
     /**
      * Aplica 15% descuento si es estudiante menor de 25 años.
      * Ejemplo: Si pasas (100.0, 20, true), debe retornar 85.0
+     * ejercicio 27
      */
     public double calcularDescuentoEstudiante(double precio, int edad, boolean esEstudiante) {
-        // TODO: Implementar
-        return 0.0;
+        if (esEstudiante && edad < 25) return precio * 0.85;
+        else return precio;
     }
 
     /**
      * Categoriza por edad: 0-12 "niño", 13-17 "adolescente", 18-64 "adulto", 65+ "adulto mayor".
      * Ejemplo: Si pasas 30, debe retornar "adulto"
+     * ejercicio 28
      */
     public String determinarCategoria(int edad) {
-        // TODO: Implementar
-        return "";
+        if (edad >= 0 && edad <= 12) return "niño";
+        else if (edad >= 13 && edad <= 17) return "adolescente";
+        else if (edad >= 18 && edad <= 64) return "adulto";
+        else return "adulto mayor";
     }
 
-    // =================================================================
-    // 5. CICLOS
-    // =================================================================
+// =================================================================
+// 5. CICLOS
+// =================================================================
 
     /**
      * Calcula la suma de números desde 1 hasta n (1+2+3+...+n).
      * Ejemplo: Si pasas 5, debe retornar 15 (1+2+3+4+5)
+     * ejercicio 29
      */
     public int sumarHastaN(int n) {
-        // TODO: Implementar
-        return 0;
+        int suma = 0;
+        for (int i = 1; i <= n; i++) {
+            suma += i;
+        }
+        return suma;
     }
 
     /**
      * Calcula el factorial de n (n! = n × (n-1) × ... × 1).
      * Ejemplo: Si pasas 4, debe retornar 24 (4×3×2×1)
+     * ejercicio 30
      */
     public int factorial(int n) {
-        // TODO: Implementar
-        return 0;
+        int resultado = 1;
+        for (int i = 2; i <= n; i++) {
+            resultado *= i;
+        }
+        return resultado;
     }
 
     /**
      * Retorna el n-ésimo número de la secuencia Fibonacci (0,1,1,2,3,5,8...).
      * Ejemplo: Si pasas 6, debe retornar 8
+     * ejercicio 31
      */
     public int fibonacci(int n) {
-        // TODO: Implementar
-        return 0;
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        int a = 0, b = 1, c = 0;
+        for (int i = 2; i <= n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        return c;
     }
 
     /**
      * Verifica si un número es perfecto (suma de sus divisores = él mismo).
      * Ejemplo: Si pasas 6, debe retornar true (1+2+3=6)
+     * ejercicio 32
      */
     public boolean esNumeroPerfecto(int num) {
-        // TODO: Implementar
-        return false;
+        int suma = 0;
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) suma += i;
+        }
+        return suma == num;
     }
 
     /**

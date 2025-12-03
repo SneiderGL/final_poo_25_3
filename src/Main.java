@@ -166,6 +166,39 @@ public class Main {
                     System.out.println("Ejercicio 20: " + e.esMultiploDeN(num20, n20));
                     break;
 
+                case 21:
+                    System.out.print("Ingrese un numero: ");
+                    int n21 = sc.nextInt();
+                    System.out.println("Ejercicio 21: " + e.incrementarEnUno(n21));
+                    break;
+
+                case 22:
+                    System.out.print("Ingrese el numero: ");
+                    int num22 = sc.nextInt();
+                    System.out.print("Ingrese el divisor: ");
+                    int div22 = sc.nextInt();
+                    System.out.println("Ejercicio 22: " + e.esDivisiblePor(num22, div22));
+                    break;
+
+                case 23:
+                    System.out.print("Ingrese la edad: ");
+                    int edad23 = sc.nextInt();
+                    System.out.println("Ejercicio 23: " + e.esMayorDeEdad(edad23));
+                    break;
+
+                case 24:
+                    System.out.print("Ingrese un numero: ");
+                    int num24 = sc.nextInt();
+                    System.out.println("Ejercicio 24: " + e.clasificarNumero(num24));
+                    break;
+
+                case 25:
+                    System.out.print("Ingrese la nota: ");
+                    double nota25 = sc.nextDouble();
+                    System.out.println("Ejercicio 25: " + e.evaluarPrueba(nota25));
+                    break;
+
+
 
                 default:
                     System.out.println("  ");

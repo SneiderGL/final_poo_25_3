@@ -176,7 +176,7 @@ public class Ejercicios {
     /**
      * Compara si el primer número es mayor que el segundo.
      * Ejemplo: Si pasas (8, 5), debe retornar true
-     * 17
+     * ejercicio 17
      */
     public boolean esMayorQue(int a, int b) {
         return a > b;
@@ -186,7 +186,7 @@ public class Ejercicios {
     /**
      * Verifica si un número es par Y positivo usando operadores lógicos.
      * Ejemplo: Si pasas 6, debe retornar true. Si pasas -4, debe retornar false
-     * 18
+     * ejercicio 18
      */
     public boolean esParYPositivo(int num) {
         return num % 2 == 0 && num > 0;
@@ -196,7 +196,7 @@ public class Ejercicios {
     /**
      * Verifica si un número es múltiplo de 3 usando el operador módulo.
      * Ejemplo: Si pasas 9, debe retornar true. Si pasas 7, debe retornar false
-     * 19
+     * ejercicio  19
      */
     public boolean esMultiploDeTres(int num) {
         // TODO: Implementar
@@ -206,6 +206,7 @@ public class Ejercicios {
     /**
      * Verifica si el primer número es múltiplo del segundo.
      * Ejemplo: Si pasas (20, 4), debe retornar true
+     * ejercicio  20
      */
     public boolean esMultiploDeN(int num, int n) {
         return num % n == 0;
@@ -215,50 +216,53 @@ public class Ejercicios {
     /**
      * Incrementa un número en 1 usando operadores de asignación.
      * Ejemplo: Si pasas 5, debe retornar 6
+     * ejercicio 21
      */
     public int incrementarEnUno(int num) {
-        // TODO: Implementar
-        return 0;
+        num += 1;
+        return num;
     }
 
     /**
      * Verifica si un número es divisible por otro (residuo = 0).
      * Ejemplo: Si pasas (15, 3), debe retornar true
+     * ejercicio 22
      */
     public boolean esDivisiblePor(int num, int divisor) {
-        // TODO: Implementar
-        return false;
+        return num % divisor == 0;
     }
 
-    // =================================================================
-    // 4. CONDICIONALES
-    // =================================================================
+// =================================================================
+// 4. CONDICIONALES
+// =================================================================
 
     /**
      * Verifica si una persona es mayor de edad (18 años o más).
      * Ejemplo: Si pasas 20, debe retornar true. Si pasas 16, debe retornar false
+     * ejercicio 23
      */
     public boolean esMayorDeEdad(int edad) {
-        // TODO: Implementar
-        return false;
+        return edad >= 18;
     }
 
     /**
      * Clasifica un número como "positivo", "negativo" o "cero".
      * Ejemplo: Si pasas 5, debe retornar "positivo"
+     * ejercicio 24
      */
     public String clasificarNumero(int num) {
-        // TODO: Implementar
-        return "";
+        if (num > 0) return "positivo";
+        else if (num < 0) return "negativo";
+        else return "cero";
     }
 
     /**
      * Determina si un estudiante es "apto" (nota >= 3.0) o "no apto".
      * Ejemplo: Si pasas 3.5, debe retornar "apto"
+     * ejercicio 25
      */
     public String evaluarPrueba(double nota) {
-        // TODO: Implementar
-        return "";
+        return nota >= 3.0 ? "apto" : "no apto";
     }
 
     /**
